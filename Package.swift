@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
   name: "FileWatcher",
+  defaultLocalization: "en",
   platforms: [
     .macOS(.v10_12),
   ],
@@ -17,7 +18,8 @@ let package = Package(
     .target(
       name: "FileWatcher",
       dependencies: [],
-      path: "./"
+      path: "./",
+      exclude: ["FileWatcherExample", "FileWatcherExample.xcodeproj", "FileWatcher.podspec", "README.md", "FileWatcher_macOS", "LICENSE"]
     )
   ],
   swiftLanguageVersions: [.v4]
