@@ -17,8 +17,7 @@ let package = Package(
     .target(
       name: "FileWatcher",
       dependencies: [],
-      path: "./",
-      exclude: ["FileWatcherExample", "FileWatcherExample.xcodeproj", "FileWatcher.podspec"]
+      path: "./"
     )
   ],
   swiftLanguageVersions: [.v4]
